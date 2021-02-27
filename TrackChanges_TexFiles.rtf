@@ -1,0 +1,28 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16340\viewh11540\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 $ cd /users/joyjitchatterjee/Documents # Change directory to the folder containing your LaTex files\
+\
+$ cd MyLaTex_Files #Assuming that your LaTex files are located in this directory\
+\
+$ latexdiff old_texfile.bbl new_texfile.bbl > diff_texfile.bbl --disable-citation-markup --allow-spaces # This utilises the .bbl files and the 
+\f1\i latexdiff
+\f0\i0  utility for deriving a new .bbl file containing difference between the old and new ones \
+\
+& latexdiff old_texfile.tex new_texfile.tex > diff_texfile.tex --disable-citation-markup --allow-spaces # Similar to doing this for .bbl ones, we do this for the old and new .tex files to derive a new .tex file containing tracked differences between the old and new ones\
+\
+$  pdflatex diff_texfile.tex # Finally, the PDF file with tracked changes is generated using the 
+\f1\i pdflatex
+\f0\i0  utility. Note that the PDF generated would be located in the same directory wherein you executed the commands on the terminal/command prompt. \
+\
+\
+\
+\
+\
+\
+\
+}
