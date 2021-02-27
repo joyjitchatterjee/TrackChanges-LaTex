@@ -4,9 +4,9 @@ $ cd MyLaTex_Files #Assuming that your LaTex files are located in this directory
 
 $ latexdiff old_texfile.bbl new_texfile.bbl > diff_texfile.bbl --disable-citation-markup --allow-spaces # This utilises the .bbl files and the latexdiff utility for deriving a new .bbl file containing difference between the old and new ones 
 
-& latexdiff old_texfile.tex new_texfile.tex > diff_texfile.tex --disable-citation-markup --allow-spaces # Similar to doing this for .bbl ones, we do this for the old and new .tex files to derive a new .tex file containing tracked differences between the old and new ones
+$ latexdiff old_texfile.tex new_texfile.tex > diff_texfile.tex --disable-citation-markup --allow-spaces # Similar to doing this for .bbl ones, we do this for the old and new .tex files to derive a new .tex file containing tracked differences between the old and new ones
 
-$  pdflatex diff_texfile.tex # Finally, the PDF file with tracked changes is generated using the pdflatex utility. Note that the PDF generated would be located in the same directory wherein you executed the commands on the terminal/command prompt. 
+$ pdflatex diff_texfile.tex # Finally, the PDF file with tracked changes is generated using the pdflatex utility. Note that the PDF generated would be located in the same directory wherein you executed the commands on the terminal/command prompt. 
 
 
 
